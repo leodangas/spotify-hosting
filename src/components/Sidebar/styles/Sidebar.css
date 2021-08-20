@@ -1,0 +1,290 @@
+.sidebar-container {
+  position: fixed;
+  height: 100%;
+  width: 15rem;
+  background-color: black;
+  z-index: 1;
+}
+.sidebar-container h1 {
+  color: white;
+}
+.sidebar-container .spotify-logo {
+  width: 55%;
+  filter: invert(1);
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.sidebar-container .sidebar-nav-links {
+  padding-top: 1.5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+.sidebar-container .sidebar-nav-links a {
+  text-decoration: none;
+}
+.sidebar-container .sidebar-nav-links .sidebar-home,
+.sidebar-container .sidebar-nav-links .sidebar-search,
+.sidebar-container .sidebar-nav-links .sidebar-library,
+.sidebar-container .sidebar-nav-links .sidebar-playlist,
+.sidebar-container .sidebar-nav-links .sidebar-liked {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.sidebar-container .sidebar-nav-links .sidebar-home img,
+.sidebar-container .sidebar-nav-links .sidebar-search img,
+.sidebar-container .sidebar-nav-links .sidebar-library img,
+.sidebar-container .sidebar-nav-links .sidebar-playlist img,
+.sidebar-container .sidebar-nav-links .sidebar-liked img {
+  filter: invert(1);
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.sidebar-container .sidebar-nav-links .sidebar-home h1,
+.sidebar-container .sidebar-nav-links .sidebar-search h1,
+.sidebar-container .sidebar-nav-links .sidebar-library h1,
+.sidebar-container .sidebar-nav-links .sidebar-playlist h1,
+.sidebar-container .sidebar-nav-links .sidebar-liked h1 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.sidebar-container .sidebar-nav-links .sidebar-home:hover img,
+.sidebar-container .sidebar-nav-links .sidebar-home:hover h1,
+.sidebar-container .sidebar-nav-links .sidebar-search:hover img,
+.sidebar-container .sidebar-nav-links .sidebar-search:hover h1,
+.sidebar-container .sidebar-nav-links .sidebar-library:hover img,
+.sidebar-container .sidebar-nav-links .sidebar-library:hover h1,
+.sidebar-container .sidebar-nav-links .sidebar-playlist:hover img,
+.sidebar-container .sidebar-nav-links .sidebar-playlist:hover h1,
+.sidebar-container .sidebar-nav-links .sidebar-liked:hover img,
+.sidebar-container .sidebar-nav-links .sidebar-liked:hover h1 {
+  opacity: 1;
+}
+.sidebar-container .sidebar-nav-links .sidebar-playlist {
+  margin-top: 2rem;
+}
+.sidebar-container .sidebar-nav-links .sidebar-playlist .sidebar-playlist-plus-icon {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.6;
+  border-radius: 0.1rem;
+  transition: all 0.3s ease;
+}
+.sidebar-container .sidebar-nav-links .sidebar-playlist .sidebar-playlist-plus-icon img {
+  filter: invert(0);
+  opacity: 1;
+  width: 1rem;
+  height: 1rem;
+}
+.sidebar-container .sidebar-nav-links .sidebar-playlist:hover .sidebar-playlist-plus-icon {
+  opacity: 1;
+}
+.sidebar-container .sidebar-nav-links .sidebar-liked .sidebar-liked-love-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(60deg, #350faa 0%, #5071cc 58%, white 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.sidebar-container .sidebar-nav-links .sidebar-liked .sidebar-liked-love-icon img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.sidebar-container .sidebar-nav-links .sidebar-liked:hover .sidebar-liked-love-icon {
+  opacity: 1;
+}
+.sidebar-container .sidebar-nav-links .active-sidebar-link {
+  background: #282828;
+  opacity: 1;
+}
+.sidebar-container .sidebar-nav-links .active-sidebar-link h1 {
+  opacity: 1;
+}
+.sidebar-container .sidebar-prompt {
+  position: absolute;
+  background: #2e77d0;
+  width: 20.625rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 3rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.sidebar-container .sidebar-prompt h1 {
+  font-size: 1rem;
+}
+.sidebar-container .sidebar-prompt h2 {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  width: 95%;
+  line-height: 1.4;
+}
+.sidebar-container .sidebar-prompt .prompt-left-arrow {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  position: absolute;
+  border-right: 1rem solid #2e77d0;
+  margin-left: -1.5rem;
+}
+.sidebar-container .sidebar-prompt .sidebar-prompt-buttons {
+  margin-top: 1.5rem;
+}
+.sidebar-container .sidebar-prompt .sidebar-prompt-buttons .not-now-button {
+  color: white;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  margin-left: 5rem;
+  cursor: pointer;
+}
+.sidebar-container .sidebar-prompt .sidebar-prompt-buttons .not-now-button:hover {
+  transform: scale(1.03);
+}
+.sidebar-container .sidebar-prompt .sidebar-prompt-buttons .log-in-button {
+  color: white;
+  background: #1db954;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  margin-left: 2rem;
+}
+.sidebar-container .sidebar-prompt .sidebar-prompt-buttons .log-in-button:hover {
+  transform: scale(1.03);
+  background: #1ED760;
+}
+.sidebar-container .library {
+  margin-left: 10.5rem;
+  margin-top: -3.3rem;
+}
+.sidebar-container .playlists {
+  margin-left: 10.5rem;
+  margin-top: 1.3rem;
+}
+.sidebar-container .liked {
+  margin-left: 10.5rem;
+  margin-top: 3.7rem;
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    z-index: 2;
+  }
+  .sidebar-container .spotify-logo {
+    display: none;
+  }
+  .sidebar-container .sidebar-nav-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-liked {
+    display: none;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-home, .sidebar-container .sidebar-nav-links .sidebar-search, .sidebar-container .sidebar-nav-links .sidebar-library, .sidebar-container .sidebar-nav-links .sidebar-playlist {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-home h1, .sidebar-container .sidebar-nav-links .sidebar-search h1, .sidebar-container .sidebar-nav-links .sidebar-library h1, .sidebar-container .sidebar-nav-links .sidebar-playlist h1 {
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-home img, .sidebar-container .sidebar-nav-links .sidebar-search img, .sidebar-container .sidebar-nav-links .sidebar-library img, .sidebar-container .sidebar-nav-links .sidebar-playlist img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-home img, .sidebar-container .sidebar-nav-links .sidebar-search img, .sidebar-container .sidebar-nav-links .sidebar-library img {
+    margin-top: 0.5rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist {
+    margin: 0;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist .sidebar-playlist-plus-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist h1 {
+    margin-top: 0.5rem;
+  }
+
+  .sidebar-prompt {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sidebar-container .sidebar-nav-links .sidebar-home h1, .sidebar-container .sidebar-nav-links .sidebar-search h1, .sidebar-container .sidebar-nav-links .sidebar-library h1, .sidebar-container .sidebar-nav-links .sidebar-playlist h1 {
+    font-size: 0.7rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-home img, .sidebar-container .sidebar-nav-links .sidebar-search img, .sidebar-container .sidebar-nav-links .sidebar-library img, .sidebar-container .sidebar-nav-links .sidebar-playlist img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist h1 {
+    display: none;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist:after {
+    content: "Playlist";
+    display: block;
+    color: white;
+    font-weight: 600;
+    opacity: 0.8;
+    font-size: 0.7rem;
+    margin-top: 0.6rem;
+  }
+  .sidebar-container .sidebar-nav-links .sidebar-playlist .sidebar-playlist-plus-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=Sidebar.css.map */

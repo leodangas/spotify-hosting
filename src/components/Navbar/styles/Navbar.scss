@@ -1,0 +1,140 @@
+.navbar-container {
+    margin-left: 15rem;
+    background-color: #090909;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    .navbar-navigation {
+        display: flex;
+        margin-left: 1rem;
+        img {
+            margin-top: 0.2rem;
+            margin-right: 1rem;
+            cursor: not-allowed;
+            background: white;
+            border-radius: 50%;
+            filter: invert(1);
+            width: 1.8rem;
+            opacity: 0.6;
+        }
+        .active-navigation {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    .navbar-search {
+        display: flex;
+        align-items: center;
+        img {
+            width: 1.4rem;
+            position: absolute;
+            margin-left: 0.5rem;
+            cursor: text;
+        }
+        input {
+            border-radius: 1rem;
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            width: 20rem;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+            outline: none;
+            border: none;
+            font-weight: 500;
+        }
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration {
+        -webkit-appearance:none;
+        }
+        span {
+            font-size: 0.9rem;
+            cursor: default;
+            margin-left: 18.2rem;
+            margin-top: -0.2rem;
+            position: absolute;
+        }
+    }
+    .navbar-login {
+        margin-left: auto;
+        button {
+            background: white;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+            border: none;
+            outline: none;
+            color: black;
+            border-radius: 3rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navbar-container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        .navbar-search {
+            img {
+                width: 0.9rem;
+            }
+            input {
+                padding-left: 1.6rem;
+                width: 10rem;
+                font-size: 0.4rem;
+            }
+            span {
+                margin-left: 8.5rem;
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar-container {
+        .navbar-navigation {
+            margin-left : 0.1rem;
+            img {
+                margin-right: 0.5rem;
+            }
+        }
+        .navbar-login {
+            button {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .navbar-container {
+        .navbar-search {
+            input {
+                width: 6rem;
+            }
+            input::placeholder {
+                color: transparent;
+            }
+            span {
+                margin-left: 4.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+
+.home-container {
+  background: #1d1d1d;
+  margin-left: 15rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  .home-playlist {
+    background: #181818;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 15%;
+    cursor: pointer;
+    margin-right: 1rem;
+    .playlist-image {
+      width: 100%;
+      position: relative;
+      .playlist-play-icon {
+        position: absolute;
+        right: 1rem;
+        bottom: 0.6rem;
+        border-radius: 50%;
+        background: #1DB954;
+        height: 25%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        cursor: default;
+        .play-icon {
+          width: 35%;
+          filter: invert(1);
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+    h1 {
+      margin-top: 1rem;
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    h2 {
+      color: white;
+      opacity: 0.7;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+      display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  word-wrap: break-word;
+    }
+    &:hover {
+      background: #252525;
+      .playlist-image {
+        .playlist-play-icon {
+          opacity: 1;
+          bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .home-container {
+    .home-playlist:nth-child(6) {
+      display: none;
+    }
+    .home-playlist {
+      width: 18%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    .home-playlist:nth-child(5) {
+      display: none;
+    }
+    .home-playlist {
+      width: 23%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home-container {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .home-container {
+    .home-playlist:nth-child(4) {
+      display: none;
+    }
+    .home-playlist {
+      width: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .home-container {
+    .home-playlist:nth-child(3) {
+      display: none;
+    }
+    .home-playlist {
+      width: 48%;
+    }
+  }
+}
+
+.loading-section {
+  background: #1d1d1d;
+  height: 100vh;
+}

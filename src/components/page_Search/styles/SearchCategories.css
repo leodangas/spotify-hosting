@@ -1,0 +1,102 @@
+.search-categories-container {
+  margin-left: 15rem;
+  background: #121212;
+  padding: 2rem;
+  height: 100%;
+  min-height: 100vh;
+}
+.search-categories-container h1 {
+  color: white;
+  font-size: 1.3rem;
+}
+.search-categories-container .search-categories-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.search-categories-container .search-categories-items .search-category {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: 15%;
+  padding: 1rem;
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.search-categories-container .search-categories-items .search-category img {
+  width: 100%;
+}
+.search-categories-container .search-categories-items .search-category h1 {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  opacity: 0.9;
+}
+.search-categories-container .search-categories-items .search-category h2 {
+  color: white;
+  opacity: 0.8;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.search-categories-container .search-categories-items .search-category:hover {
+  background: #282828;
+}
+.search-categories-container .search-categories-items .search-category:hover h1 {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .search-categories-container .search-categories-items .search-category {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .search-categories-container .search-categories-items .search-category {
+    width: 22%;
+  }
+  .search-categories-container .search-categories-items .search-category h1 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .search-categories-container {
+    margin-left: 0;
+  }
+  .search-categories-container .search-categories-items .search-category {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .search-categories-container {
+    margin-left: 0;
+  }
+  .search-categories-container .search-categories-items .search-category {
+    width: 28%;
+  }
+  .search-categories-container .search-categories-items .search-category h1 {
+    font-size: 0.6rem;
+  }
+  .search-categories-container .search-categories-items .search-category h2 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .search-categories-container {
+    margin-left: 0;
+  }
+  .search-categories-container .search-categories-items .search-category {
+    width: 42%;
+  }
+  .search-categories-container .search-categories-items .search-category h1 {
+    font-size: 0.7rem;
+  }
+  .search-categories-container .search-categories-items .search-category h2 {
+    font-size: 0.6rem;
+  }
+}
+
+/*# sourceMappingURL=SearchCategories.css.map */
