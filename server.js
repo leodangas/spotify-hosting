@@ -3,6 +3,8 @@ const cors = require('cors');
 
 const app = express();
 
+const PORT = 5000;
+
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server running on port ${PORT}`);
 })
@@ -87,6 +89,5 @@ let SpotifyWebApi = require("spotify-web-api-node");
       console.log('Something went wrong!', err);
     });
   })
-const port = 5000;
 
-app.listen(port, () => `Server running on port ${port}`);
+
