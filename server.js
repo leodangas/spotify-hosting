@@ -3,6 +3,9 @@ const cors = require('cors');
 
 const app = express();
 
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+})
 let SpotifyWebApi = require("spotify-web-api-node");
   const spotifyApi = new SpotifyWebApi({
     clientId: "b47acdb7d08d4934992db2db40b1de1e",
