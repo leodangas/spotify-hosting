@@ -16,7 +16,7 @@ const Playlist = () => {
   useEffect(() => {
 
     const fetchPlaylist = (playlistId) => {
-      fetch(`https://another-spotify-clone.herokuapp.com//api/playlist?id=${playlistId}`)
+      fetch(`https://another-spotify-clone.herokuapp.com/api/playlist?id=${playlistId}`)
         .then((res) => res.json())
         .then((res) => {
 

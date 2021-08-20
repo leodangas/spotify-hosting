@@ -11,7 +11,7 @@ const HomeMain = () => {
     //Fetching home sections playlists
     useEffect(() => {
         const fetchCategory = (playlistId, index) => {
-            fetch(`https://another-spotify-clone.herokuapp.com//api/categories?id=${playlistId}`)
+            fetch(`https://another-spotify-clone.herokuapp.com/api/categories?id=${playlistId}`)
                 .then((res) => res.json())
                 .then((res) => {
                     let playlist = res.playlists.items.slice(0, 6).map((item) => {

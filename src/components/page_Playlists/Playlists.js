@@ -14,7 +14,7 @@ const Playlists = () => {
     //Fetching playlists based on the url
     useEffect(() => {
       const fetchPlaylists = (genre) => {
-        fetch(`https://another-spotify-clone.herokuapp.com//api/categories?id=${genre}`)
+        fetch(`https://another-spotify-clone.herokuapp.com/api/categories?id=${genre}`)
           .then((res) => res.json())
           .then((res) => {
             let playlists = res.playlists.items.map((item) => {

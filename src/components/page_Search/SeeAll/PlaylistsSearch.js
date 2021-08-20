@@ -11,7 +11,7 @@ const PlaylistsSearch = (props) => {
   const [showPlaylists, setShowPlaylists] = useState(false);
   useEffect(() => {
     const fetchPlaylists = () => {
-      fetch(`https://another-spotify-clone.herokuapp.com//api/searchplaylists/?id=${params.searchId}`)
+      fetch(`https://another-spotify-clone.herokuapp.com/api/searchplaylists/?id=${params.searchId}`)
         .then((res) => res.json())
         .then((res) => {
           let playlistResults = res.playlists.items.filter((item) => {
