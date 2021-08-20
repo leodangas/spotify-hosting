@@ -1,0 +1,195 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-background .modal-container {
+  background: linear-gradient(180deg, #5d9087 0%, #292929 100%);
+  width: 50%;
+  height: 55%;
+  border-radius: 0.5rem;
+  padding: 3% 3%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.modal-background .modal-container .modal-photo {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.modal-background .modal-container .modal-photo img {
+  width: 100%;
+  height: 90%;
+  border-radius: 0.5rem;
+}
+.modal-background .modal-container .modal-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.modal-background .modal-container .modal-right h1 {
+  color: white;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.modal-background .modal-container .modal-right .sign-up {
+  background: #1DB954;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+}
+.modal-background .modal-container .modal-right .sign-up:hover {
+  transform: scale(1.05);
+  background: #1ED760;
+}
+.modal-background .modal-container .modal-right .download {
+  outline: none;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+}
+.modal-background .modal-container .modal-right .download:hover {
+  transform: scale(1.05);
+}
+.modal-background .modal-container .modal-right .have-account {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.modal-background .modal-container .modal-right .have-account h2 {
+  font-size: 0.7rem;
+  color: white;
+  margin-right: 1rem;
+}
+.modal-background .modal-container .modal-right .have-account h1 {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.modal-background .modal-container .modal-right .have-account h1:hover {
+  transform: scale(1.05);
+}
+.modal-background .close {
+  margin-top: 1rem;
+  color: white;
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.modal-background .close:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1400px) {
+  .modal-background .modal-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .modal-background .modal-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .modal-background .modal-container {
+    height: 40%;
+  }
+  .modal-background .modal-container .modal-photo img {
+    height: 80%;
+  }
+  .modal-background .modal-container .modal-right {
+    justify-content: center;
+  }
+  .modal-background .modal-container .modal-right h1 {
+    font-size: 1rem;
+  }
+  .modal-background .modal-container .modal-right .download, .modal-background .modal-container .modal-right .sign-up {
+    margin-top: 1rem;
+    width: 80%;
+    height: 2.5rem;
+    font-size: 0.7rem;
+  }
+  .modal-background .modal-container .modal-right .have-account {
+    margin-top: 1rem;
+  }
+  .modal-background .modal-container .modal-right .have-account h1 {
+    font-size: 0.6rem;
+  }
+  .modal-background .modal-container .modal-right .have-account h2 {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .modal-background .modal-container {
+    justify-content: center;
+  }
+  .modal-background .modal-container .modal-photo {
+    width: 40%;
+  }
+  .modal-background .modal-container .modal-right {
+    margin-left: 1rem;
+  }
+  .modal-background .modal-container .modal-right h1 {
+    font-size: 0.7rem;
+  }
+  .modal-background .modal-container .modal-right .download, .modal-background .modal-container .modal-right .sign-up {
+    height: 2rem;
+    font-size: 0.65rem;
+  }
+  .modal-background .modal-container .modal-right .have-account {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-background .modal-container .modal-right .have-account h1 {
+    font-size: 0.55rem;
+    margin-top: 0.5rem;
+  }
+  .modal-background .modal-container .modal-right .have-account h2 {
+    font-size: 0.55rem;
+    margin: 0;
+  }
+}
+@media screen and (min-height: 1100px) and (min-width: 2000px) {
+  .modal-background .modal-container .modal-right h1 {
+    font-size: 3rem;
+  }
+  .modal-background .modal-container .modal-right .download, .modal-background .modal-container .modal-right .sign-up {
+    height: 5rem;
+    font-size: 1.5rem;
+  }
+  .modal-background .modal-container .modal-right .have-account h1, .modal-background .modal-container .modal-right .have-account h2 {
+    font-size: 1.5rem;
+  }
+  .modal-background .close {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=Modal.css.map */
