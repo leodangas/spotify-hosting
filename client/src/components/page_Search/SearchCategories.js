@@ -7,7 +7,7 @@ const SearchCategories = () => {
   const history = useHistory();
   useEffect(() => {
     const fetchCategories = () => {
-      fetch("https:/another-spotify-clone.herokuapp.com//api/playlists")
+      fetch("https:/another-spotify-clone.herokuapp.com/api/playlists")
         .then((res) => res.json())
         .then((res) => {
           let categories = res.items.map((item) => {

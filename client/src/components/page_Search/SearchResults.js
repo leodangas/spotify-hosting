@@ -20,7 +20,7 @@ const SearchResults = () => {
   const history = useHistory();
   useEffect(() => {
     const fetchSearch = () => {
-      const fetchSongs = fetch(`https://another-spotify-clone.herokuapp.com//api/searchtracks/?id=${params.searchId}`);
+      const fetchSongs = fetch(`https://another-spotify-clone.herokuapp.com/api/searchtracks/?id=${params.searchId}`);
       const fetchPlaylists = fetch(
         `https://another-spotify-clone.herokuapp.com/api/searchplaylists/?id=${params.searchId}`
       );

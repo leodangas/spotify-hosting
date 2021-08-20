@@ -11,7 +11,7 @@ const SongsSearch = () => {
   const [showSongs, setShowSongs] = useState(false);
   useEffect(() => {
     const fetchSongs = () => {
-      fetch(`https://another-spotify-clone.herokuapp.com//api/searchtracks/?id=${params.searchId}`)
+      fetch(`https://another-spotify-clone.herokuapp.com/api/searchtracks/?id=${params.searchId}`)
         .then((res) => res.json())
         .then((res) => {
           let songResults = res.tracks.items.map((item) => {
